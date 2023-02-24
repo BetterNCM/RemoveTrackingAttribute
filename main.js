@@ -1,4 +1,4 @@
-plugin.onLoad(async () => {
+plugin.onLoad(() => {
 	const _channalCall = channel.call;
 	channel.call = (name, ...args) => {
 		if (name === 'winhelper.setClipBoardData') {
